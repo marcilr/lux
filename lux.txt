@@ -1,0 +1,6 @@
+lux.txt
+Created Fri 23 Sep 2022 01:20:52 PM AKDT
+Copyright (C) 2022 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+LUX Thermostat
