@@ -133,14 +133,136 @@ Feb 23, 2022<br>
 <!--- ================ Fri 23 Sep 2022 01:26:00 PM AKDT ============= --->
 <p style="margin-top:1cm;">
 <h2>Fri 23 Sep 2022 01:26:00 PM AKDT</h2><br>
-<p style="margin-top:-0.5cm;">
+
+<p style="margin-top:0.5cm;">
+5:05PM Shutoff furnace and changed white wire on new thermostat
+from C to W1.  Will see if the down stairs of our unit starts to
+get some heat.
+  
+<p style="margin-top:0.5cm;">
+4:25PM turn off gas furnace and opened the LUX TS9600TSA
+for inspection.
+
+<p style="margin-top:0.5cm;">
+  NOTE: Previously measured the white wire, previous connected
+  to W/B terminals at 27.69V.  On the new thermostat I think this
+  should connect to W1 (not C).  Will try this.
+
+<p style="margin-top:0.5cm;">
+However given LUX TS9600TSA thermometer manual, tx9600tsa_manual_en.pdf,
+<a href="pdf/tx9600tsa_manual_en.pdf#page=10">page 10</a>,<br>
+<strong>'(2-WIRE HEAT USE &quot;RH&quot;&amp;&quot;W1&quot)'</strong>
+the correct configuration is more likely<br>
+(note change of white wire from C to W1 terminal):
+
+<table>  
+  <tr>
+    <td>G</td>
+    <td>Unconnected</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Unconnected</td>
+  </tr>
+  <tr>
+    <td>O</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>Y</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>RC</td>
+    <td>
+      Jumpered to RH<br>
+      SYSTEM 24V TRANSFORMER
+    </td>
+  </tr>
+  <tr>
+    <td>RH</td>
+    <td>
+      Jumpered to RC<br>
+      SYSTEM 24V TRANSFORMER<br>
+      Connected to brown wire<br>
+    </td>
+  </tr>
+  <tr>
+    <td>W2</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>A</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>W1</td>
+    <td>Connect to white wire</td>
+  </tr> 
+  <tr>
+    <td>C</td>
+    <td>Unconnected</td>
+  </tr>
+</table>
+  
+
+<p style="margin-top:0.5cm;">
+Initial wiring configuration of the LUX TS9600TSA has
+from left to right is:<br>
+<table>  
+  <tr>
+    <td>G</td>
+    <td>Unconnected</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Unconnected</td>
+  </tr>
+  <tr>
+    <td>O</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>Y</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>RC</td>
+    <td>Jumpered to RH</td>
+  </tr>
+  <tr>
+    <td>RH</td>
+    <td>
+      Jumpered to RC<br>
+      Connected to brown wire<br>
+    </td>
+  </tr>
+  <tr>
+    <td>W2</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>A</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>W1</td>
+    <td>Unconnected</td>
+  </tr> 
+  <tr>
+    <td>C</td>
+    <td>Connected to white wire</td>
+  </tr>
+</table>
+  
+<p style="margin-top:0.5cm;">
 Have purchased and done installation of the LUX TS9600TSA
 in the downstairs hallway of out apartment.
 
-<p style="margin-top:-0.5cm;">
-  Today ~3:00PM ran through all the switch times and configured for
-  70F.  However, still not getting any heat in the downstairs
-  heaters.
+<p style="margin-top:0.5cm;">
+Today ~3:00PM ran through all the switch times and configured for
+70F.  However, still not getting any heat in the downstairs
+heaters.
 
 <p>
 The thermostat took 2x AAA batteries and the LED display works.<br>
@@ -222,7 +344,7 @@ LUX TX9600TSA manual<br>
 <p>
 <table>
   <tr>
-    <td style="width:200px;" valign="top">Cautions and Warnings</td>
+    <td style="width:225px;" valign="top">Cautions and Warnings</td>
     <td valign="top"><a href="pdf/tx9600tsa_manual_en.pdf#page=2">page 2</a></td>
   </tr>
   <tr>
@@ -257,7 +379,19 @@ LUX TX9600TSA manual<br>
     <td style="width:200px;" valign="top">Wiring Diagrams</td>
     <td valign="top"><a href="pdf/tx9600tsa_manual_en.pdf#page=9">page 9</a></td>
   </tr>
-    <tr>
+  <tr>
+    <td style="width:200px;" valign="top">1-Stage or 2-Stage, Heating Only<br>
+      (Including millivolt)<br>
+      (2-Wire heat use &quot;RH&quot; and
+      &quot;W1&quot;)
+    </td>
+    <td valign="top"><a href="pdf/tx9600tsa_manual_en.pdf#page=10">page 10</a><br>
+      2-WIRE HEAT USE &quot;RH&quot; &amp; &quot;W1&quot;<br>
+      This is what I used for our 1 27.69V white wire and
+      brown wire connected to jumped RC and RH terminals.
+    </td>
+  </tr>
+  <tr>
     <td style="width:200px;" valign="top">Hardware Setup Options</td>
     <td valign="top"><a href="pdf/tx9600tsa_manual_en.pdf#page=18">page 18</a><br>
       <strong>This made need additional configuration</strong>
